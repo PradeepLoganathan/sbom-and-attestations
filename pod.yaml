@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: syft-k8s-pods
+spec:
+  containers:
+    - image: anchore/syft:latest
+      name: syft-k8s-demo
+      args: ["nginx:latest"]
